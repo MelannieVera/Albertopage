@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ingeniería en Software - Soluciones Digitales</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background-color: #f4f6f9;
+    }
+
+    header {
+      background: #1e2a38;
+      color: white;
+      padding: 20px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 1.8rem;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      margin-top: 10px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #1abc9c;
+    }
+
+    .hero {
+      background: url("https://images.unsplash.com/photo-1526378722484-cc5c5105d4d4") no-repeat center center/cover;
+      height: 400px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-align: center;
+      text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+      padding: 20px;
+    }
+
+    .hero h2 {
+      font-size: 2.5rem;
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 20px;
+    }
+
+    .hero .btn {
+      padding: 12px 25px;
+      background: #1abc9c;
+      color: white;
+      font-weight: bold;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .hero .btn:hover {
+      background: #16a085;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #1e2a38;
+      font-size: 2rem;
+    }
+
+    /* Sección servicios */
+    .servicios {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      text-align: center;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+      color: #1abc9c;
+    }
+
+    .card p {
+      font-size: 0.95rem;
+    }
+
+    /* Sección sobre nosotros */
+    .nosotros {
+      background: #eaf2f8;
+      border-radius: 10px;
+      padding: 30px;
+      text-align: center;
+    }
+
+    .nosotros p {
+      max-width: 800px;
+      margin: auto;
+    }
+
+    /* Formulario de contacto */
+    .contacto form {
+      max-width: 600px;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .contacto input, .contacto textarea {
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 1rem;
+    }
+
+    .contacto button {
+      background: #1abc9c;
+      color: white;
+      font-weight: bold;
+      padding: 12px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .contacto button:hover {
+      background: #16a085;
+    }
+
+    footer {
+      background: #1e2a38;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+    }
+
+    /* Responsividad */
+    @media (max-width: 600px) {
+      nav {
+        flex-direction: column;
+        gap: 10px;
+      }
+      .hero h2 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Ingeniería en Software</h1>
+    <nav>
+      <a href="#servicios">Servicios</a>
+      <a href="#nosotros">Nosotros</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Pagina web responsiva</h2>
+    <p>Materia Diseño  Frontedn con Frameworks</p>
+    <button class="btn">Solicitar Cotización</button>
+  </section>
+
+  <div class="container">
+    <h2 id="servicios">Nuestros Servicios</h2>
+    <div class="servicios">
+      <div class="card">
+        <h3>Desarrollo Web</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elitLorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+      <div class="card">
+        <h3>Aplicaciones Móviles</h3>
+        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+      <div class="card">
+        <h3>Consultoría IT</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elitLorem ipsum dolor sit amet, consectetur adipiscing elit..</p>
+      </div>
+      <div class="card">
+        <h3>Automatización</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elitLorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container nosotros" id="nosotros">
+    <h2>Sobre Nosotros</h2>
+    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit..</p>
+  </div>
+
+  <div class="container contacto" id="contacto">
+    <h2>Contáctanos</h2>
+    <form>
+      <input type="text" placeholder="Tu nombre" required>
+      <input type="email" placeholder="Tu correo" required>
+      <textarea rows="5" placeholder="Escribe tu mensaje..." required></textarea>
+      <button type="submit">Enviar Mensaje</button>
+    </form>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Ingeniería en Software | Todos los derechos reservados</p>
+  </footer>
+</body>
+</html>
